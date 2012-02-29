@@ -6,6 +6,9 @@
 
 	rails new your_project_name -m rails3-app-template/rails3.rb
 	
-# License
+# Reference
+  
+  https://github.com/plataformatec/simple_form
+  
+  
 
-	The code is licensed under the MIT: http://www.opensource.org/licenses/mit-license.php

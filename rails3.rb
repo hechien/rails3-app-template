@@ -13,7 +13,7 @@ run "bundle install"
 
 # install simpleform with bootstrap support
 
-rails generate simple_form:install --bootstrap
+run "rails generate simple_form:install --bootstrap"
 
 # copy files
 file 'script/watchr.rb', File.read("#{File.dirname(rails_template)}/watchr.rb")
