@@ -37,7 +37,6 @@ group :test, :development do
 end
 gem 'devise'
 gem 'anjlab-bootstrap-rails', :require => 'bootstrap-rails'
-gem 'haml-rails'
 gem 'kaminari'
 gem 'simple_form'
 
