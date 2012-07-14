@@ -2,14 +2,9 @@ source 'http://rubygems.org'
 
 gem 'rails', '3.2.6'
 
-# Bundle edge Rails instead:
-# gem 'rails',     :git => 'git://github.com/rails/rails.git'
 gem 'mysql2'
 gem 'sqlite3'
 
-
-# Gems used only for assets and not required
-# in production environments by default.
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
   gem 'coffee-rails', '~> 3.2.1'
@@ -17,32 +12,30 @@ group :assets do
 end
 
 gem 'jquery-rails'
-
-# To use ActiveModel has_secure_password
-# gem 'bcrypt-ruby', '~> 3.0.0'
-
-# Use unicorn as the web server
-# gem 'unicorn'
-
-# Deploy with Capistrano
+gem 'unicorn'
 gem 'capistrano'
+gem 'capistrano-ext'
 gem 'therubyracer'
-# To use debugger
-#gem 'ruby-debug19', :require => 'ruby-debug'
+gem 'yajl-ruby', require: 'yajl'
+gem 'nokogiri'
 
 group :test, :development do
   # Pretty printed test output
+  gem "rspec", "~> 2.0"
+  gem "rspec-rails", "~> 2.0"
+  gem "factory_girl_rails"
+  gem "shoulda-matchers"
+  gem "rcov"
+  gem "delorean"
   gem "watchr"
-  #gem "delorean"
 end
+
 gem 'devise'
-gem 'anjlab-bootstrap-rails', :require => 'bootstrap-rails'
+gem 'devise-encryptor'
+gem 'anjlab-bootstrap-rails', require: 'bootstrap-rails'
 gem 'kaminari'
 gem 'simple_form'
-
-
-
-gem "kaminari"
+gem 'jbuilder'
 
 # File Uploads
 #gem "paperclip"
@@ -51,12 +44,8 @@ gem "kaminari"
 
 # gem "cancan"
 
-
 # gem 'validates_timeliness', '~> 3.0.5'
 # gem 'acts-as-taggable-on'
- 
-
-
 
 # PDF generator
 # gem 'prawn'
@@ -64,7 +53,7 @@ gem "kaminari"
 # gem 'typhoeus'
 # gem 'rest-client', :require => 'restclient'
 
-# Memcached client 
+# Memcached client
 # gem "dalli"
 # gem "memcache-client", :require => "memcache"
 
@@ -75,3 +64,23 @@ gem "kaminari"
 
 # Full-text search engine
 # gem 'thinking-sphinx', '~> 2.0.2', :require => 'thinking_sphinx'
+
+# State machine
+# gem 'aasm'
+# gem 'state_machine'
+
+# HTTP client
+# gem 'typhoeus'
+# gem 'rest-client', :require => 'restclient'
+
+# Memcached client
+# gem "dalli"
+# gem "memcache-client", :require => "memcache"
+
+# Deployment tool
+# gem 'capistrano'
+# gem 'whiskey_disk'
+
+# Debugger (ruby-debug for Ruby 1.8.7+, ruby-debug19 for Ruby 1.9.2+)
+# gem 'ruby-debug'
+# gem 'ruby-debug19'
