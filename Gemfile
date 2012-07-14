@@ -31,7 +31,7 @@ group :test, :development do
 end
 
 gem 'devise'
-gem 'devise-encryptor'
+gem 'devise-encryptable'
 gem 'anjlab-bootstrap-rails', require: 'bootstrap-rails'
 gem 'kaminari'
 gem 'simple_form'
